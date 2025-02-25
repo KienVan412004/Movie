@@ -1,0 +1,48 @@
+.btn-add{
+    width: 120px; 
+    height: 38px; 
+    border:2px solid #00c7f2; 
+    border-radius: 12px; 
+    background-color: #00c7f2;
+    color:white; 
+    font-weight: 600;       
+}
+.btn-add:hover{
+    background-color: #0858B1;
+    border: 2px solid #0858B1;
+}
+.btn-view{
+    width:35px; 
+    height:35px; 
+    border:2px solid #0858B1; 
+    border-radius: 10px; 
+    background-color: #0858B1;
+}
+
+.btn-update{
+    width:35px; 
+    height:35px; 
+    border:2px solid rgb(241, 175, 53); 
+    border-radius: 10px; 
+    background-color: rgb(241, 175, 53);
+}
+
+.btn-delete{
+    width:35px; 
+    height:35px; 
+    border:2px solid red; 
+    border-radius: 10px; 
+    background-color: red;
+}
+.btn-view:hover{
+    background-color: #377ac7;
+    border: 2px solid #377ac7;
+}
+.btn-update:hover{
+    background-color: rgb(240, 187, 90);
+    border: 2px solid rgb(240, 187, 90);
+}
+.btn-delete:hover{
+    background-color: rgb(252, 103, 103);
+    border: 2px solid rgb(252, 103, 103);
+}
