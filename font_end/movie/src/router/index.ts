@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 import Account from '@/views/account/Account.vue'
 import MovieVue from '@/views/movie/Movie.vue'
 import RoomVue from '@/views/room/Room.vue'
@@ -12,8 +11,7 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView,
+      redirect: '/dashboard',
     },
     {
       path: '/account',
