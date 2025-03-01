@@ -1,7 +1,6 @@
 <template>
   <Menu>
-    <div class="movie">
-      <!-- <h1>Quản lý Phim</h1> -->
+    <div class="actor">
       <div>
         <nav class="flex" aria-label="Breadcrumb">
           <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
@@ -91,7 +90,7 @@
             alt="imade"
             style="width: 50px; height: 50px; margin-right: 10px"
           />
-          <span style="font-size: 30px; font-weight: 600"> Quản lý Phim</span>
+          <span style="font-size: 30px; font-weight: 600"> Quản lý Diễn Viên</span>
         </div>
         <div class="container mx-auto px-6 pt-10">
           <!-- style="grid-template-columns: 25% 22% 31% 19%" -->
@@ -181,9 +180,8 @@
               >
                 <tr>
                   <th scope="col" class="px-6 py-3">STT</th>
-                  <th scope="col" class="px-6 py-3 rounded-s-lg">TÊN PHIM</th>
-                  <th scope="col" class="px-6 py-3">THỂ LOẠI</th>
-                  <th scope="col" class="px-6 py-3 rounded-e-lg">NGÀY PHÁT HÀNH</th>
+                  <th scope="col" class="px-6 py-3 rounded-s-lg">TÊN DIỄN VIÊN</th>
+                  <th scope="col" class="px-6 py-3 rounded-e-lg">NGÀY SINH</th>
                   <th scope="col" class="px-6 py-3 rounded-e-lg">NGÀY TẠO</th>
                   <th scope="col" class="px-6 py-3">TRẠNG THÁI</th>
                   <th scope="col" class="px-6 py-3 rounded-e-lg">HÀNH ĐỘNG</th>
@@ -201,7 +199,6 @@
                   <td class="px-6 py-4">1</td>
                   <td class="px-6 py-4">$2999</td>
                   <td class="px-6 py-4">$2999</td>
-                  <td class="px-6 py-4">1</td>
                   <td class="px-6 py-4">
                     <!-- <button class="btn-view mx-2" type="button">
                       <AkEyeOpen
@@ -318,7 +315,7 @@
     <div  id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
     <div style="display: flex;justify-content: center;" class="relative p-4 w-full max-h-full">
         <!-- Modal content -->
-        <div style="width: 1000px; border-radius: 20px;"  class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
+        <div style="width: 500px; border-radius: 20px;"  class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
             <!-- Modal header -->
             <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
               <div
@@ -333,7 +330,7 @@
             alt="imade"
             style="width: 40px; height: 40px; margin-right: 10px"
           />
-          <span style="font-size: 30px; font-weight: 600"> Quản lý Phim</span>
+          <span style="font-size: 30px; font-weight: 600"> Quản lý Diễn Viên</span>
         </div>
                 <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
                     <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
@@ -343,24 +340,17 @@
                 </button>
             </div>
             <!-- Modal body -->
-            <div style="height: 500px; padding: 30px;" >
-              <div class="grid grid-cols-2 ">
-              <div class="first-col">
+            <div style="height: 300px; padding: 30px;" >
+              <div>
+              <div >
                 <div>
-                   <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tên Phim</label>
-                   <input type="text" id="first_name" class="detail-movie-input bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  required />
+                   <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tên Diễn Viên</label>
+                   <input type="text" id="first_name" class="detail-actor-input bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  required />
               </div>
-              <div>
-                   <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Thể Loại</label>
-                   <input type="text" id="first_name" class="detail-movie-input bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  required />
-              </div>
-              <div>
-                   <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Thời Lượng Phim</label>
-                   <input type="text" id="first_name" class="detail-movie-input bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  required />
-              </div>
+
               <div style="display: flex;margin-bottom: 20px;">
               <div>
-                <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ngày Phát Hành</label>
+                <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ngày Sinh</label>
               <div style="padding-right: 30px; " class="relative max-w-sm">
                 <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                   <svg
@@ -376,7 +366,7 @@
                   </svg>
                 </div>
                 <input
-                  style="border-radius: 12px"
+                  style="border-radius: 12px; width: 205px;"
                   type="date"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Select date"
@@ -400,7 +390,7 @@
                   </svg>
                 </div>
                 <input
-                  style="border-radius: 12px"
+                  style="border-radius: 12px;width: 205px;"
                   type="date"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Select date"
@@ -410,28 +400,10 @@
         </div>
             <div>
                   <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Trạng thái</label>
-                  <input type="text" id="first_name" class="detail-movie-input bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  required />
+                  <input type="text" id="first_name" class="detail-actor-input bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  required />
             </div>
 
           </div>
-            <div class="second-col">
-              <div>
-                   <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phân Loại</label>
-                   <input type="text" id="first_name" class="detail-movie-input bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  required />
-              </div>
-              <div>
-                   <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Đạo Diễn</label>
-                   <input type="text" id="first_name" class="detail-movie-input bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  required />
-              </div>
-              <div>
-                   <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Diễn Viên</label>
-                   <textarea style="width: 100%;margin-bottom: 20px;" id="message" rows="4" class="block p-2.5  text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
-              </div>
-              <div>
-                   <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mô Tả</label>
-                   <textarea style="width: 100%;margin-bottom: 20px;" id="message" rows="4" class="block p-2.5  text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
-              </div>
-            </div>
               </div>
             </div>
             <!-- Modal footer -->
@@ -447,7 +419,7 @@
 
 <script setup lang="ts">
 import Menu from '../../layout/Menu.vue'
-import '../../assets/movie.css'
+import '../../assets/actor.css'
 import { FlDelete } from '@kalimahapps/vue-icons'
 import { BxPen } from '@kalimahapps/vue-icons'
 import { AkEyeOpen } from '@kalimahapps/vue-icons'

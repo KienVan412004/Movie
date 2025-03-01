@@ -5,6 +5,8 @@ import RoomVue from '@/views/room/Room.vue'
 import ShowtimeVue from '@/views/showtime/Showtime.vue'
 import BookingVue from '@/views/booking/Booking.vue'
 import DashboardVue from '@/views/dashboard/Dashboard.vue'
+import ActorVue from '@/views/actor/Actor.vue'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -42,6 +44,11 @@ const router = createRouter({
       path: '/dashboard',
       name: 'dashboard',
       component: DashboardVue,
+    },
+    {
+      path: '/actor',
+      name: 'actor',
+      component: ActorVue,
     },
     {
       path: '/about',
