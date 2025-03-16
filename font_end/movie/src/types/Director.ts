@@ -1,4 +1,4 @@
-export default interface Actor {
+export default interface Director {
   id?: string
   name?: string
   dateOfBirth?: Date

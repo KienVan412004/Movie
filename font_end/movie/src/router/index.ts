@@ -8,6 +8,8 @@ import DashboardVue from '@/views/dashboard/Dashboard.vue'
 import ActorVue from '@/views/actor/Actor.vue'
 import LoginVue from '@/views/login/Login.vue'
 import SignUpVue from '@/views/login/SignUp.vue'
+import DirectorVue from '@/views/director/Director.vue'
+import GenreVue from '../views/genre/Genre.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -50,6 +52,16 @@ const router = createRouter({
       path: '/actor',
       name: 'actor',
       component: ActorVue,
+    },
+    {
+      path: '/director',
+      name: 'director',
+      component: DirectorVue,
+    },
+    {
+      path: '/genre',
+      name: 'genre',
+      component: GenreVue,
     },
     {
       path: '/login',
